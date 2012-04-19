@@ -1,0 +1,11 @@
+INFO
+
+barra verde sopra il logo: 8 px 
+barra verde footer: 4px
+
+COLORI
+
+verde #8CC63F
+grigio chiaro #808080
+grigio scuro #606060
+

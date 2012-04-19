@@ -1,0 +1,204 @@
+/* 
+    Document   : master
+    Created on : 25-nov-2010, 16.51.04
+    Author     : alessandro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body {
+    font-size: 87.5%;     /* Reset base size to 14px */
+    line-height: 1.43em; /* Reset line height to 20px */
+    font-family: Helvetica, Arial, sans-serif;/*"Helvetica Neue" */
+}
+
+h1{
+    font-size:1.5em;
+    color: #606060;
+}
+
+h2{
+    font-size:1.3em;
+    color:#606060;
+}
+a, a:visited, a:hover{
+    color:#8CC63F;
+    text-decoration: none;
+}
+
+img
+{
+    border-style: none;
+}
+
+#menu{
+    margin: 0;
+    padding:0;
+    background: url(../images/barramenu.jpg) no-repeat;
+    font-size: 1.1em;
+    font-weight: bold;
+    width:940px;
+}
+
+#menu li{
+    width: 100px;
+    margin: 0 12px 0 12px;
+    display: inline;
+    padding: 0;
+    list-style-type: none;
+}
+
+#menu a:link#current,
+#menu a:visited#current, #menu a:hover{
+    color:#8CC63F;
+    text-decoration: none;
+    background-color: white;
+}
+
+#menu a:link, a:visited {
+    color: #606060;
+    text-decoration: none;
+}
+
+#submenu{
+    margin: 0;
+    padding:0;
+    font-size: 0.9em;
+    font-weight: bold;
+    color:#606060;
+}
+
+#submenu li{
+    width: 125px;
+    padding: 0;
+    list-style-type: none;
+    color:#606060;
+}
+
+#submenu li a{
+    display:block;
+    padding-left:22px;
+}
+
+#submenu a:link#current,
+#submenu a:visited#current, #submenu a:hover{
+    color:#8CC63F;
+    text-decoration: none;
+    background:url("../images/frecciasubmenu.png") no-repeat scroll left center transparent;
+}
+
+#submenu a:link, a:visited {
+    color:#606060;
+    text-decoration: none;
+}
+
+#slogan{
+    padding:3em 0 3em 0;
+}
+
+#newsletter{
+    width:220px;
+    border: 2px dashed #606060;
+    /* height: 30px;
+    border: 1px;
+      padding: 7px 20px 5px 20px;
+ background:url("../images/boxnewsletter.png") ;
+    background-repeat:no-repeat;*/
+}
+
+#newsletter_button{
+    width:20px;
+    height: 23px;
+    border: 0px;
+    background:url("../images/freccia.png") ;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+#description{
+    width:940px;
+    height: 101px;
+    padding:0.5em 2em 0.5em 2em;
+    margin: 0;
+    background: url(../images/barracentro.jpg) no-repeat;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:white;
+}
+
+#box{
+    margin:  auto;
+    width:138px;
+    height: 140px;
+    background: url(../images/box.png) no-repeat;
+    vertical-align: middle;
+}
+
+#box p{
+    margin:12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#606060;
+}
+
+.vcard{
+    background:#eee none repeat scroll 0 0;
+    margin-top:2em;
+}
+
+.vcard h2 .fn {
+    color:#8CC63F;
+    font-size:16px;
+}
+
+.vcard h2 .title {
+    color:#676963;
+    font-family:"Times New Roman",serif;
+    font-size:14px;
+    font-style:italic;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+}
+
+vcard .photo {
+    margin-top: 12px;
+}
+
+
+#footer_line{
+    height: 4px;
+    margin: 30px 0 0 0 ;
+    padding: 0;
+    background-color:#8CC63F;
+
+}
+
+#footer_box{
+    height: 40px;
+    width: 940px;
+    margin: 8px 0px 0px 0px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color:white;
+    background: url(../images/barrafooter.jpg) no-repeat;
+}
+
+#footer_box a:link,
+#footer_box a:visited, #footer_box a:hover{
+    color:white;
+    text-decoration: none;
+
+}
+
+#footer_box a:link, #footer_box a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+

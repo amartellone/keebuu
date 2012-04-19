@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Keebuu - It's better buy together!</title>
+        <!--//  Stylesheets  //-->
+        <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="./css/960.css" />
+        <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="./css/master.css" />
+        <!--//  Javascript  //-->
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#newsletter_button').click(function() {
+                    var newsletter = $('#newsletter').val();
+                    $.getJSON("staytuned.php?newsletter="+newsletter, function(json) {
+                        if(json.response == "ok") {
+                            $("#staytuned").html("");
+                            $("#staytuned").html("<div style=\"margin-top:5px;height:26px;color:#8CC63F;\"><b>Yes! You're tuned!</b><div>");
+                        }
+                        else {
+                            $("#staytuned").html("");
+                            $("#staytuned").html("<div style=\"margin-top:5px;height:26px;color:#8CC63F;\"><b>Email already used or not valid.</b><div>");
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header" class="container_12">
+            <div id="logo"><a href="index.html"><img src="images/logo.png" width="228" height="46" alt="logo"/></a></div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html" id="current">Home</a></li>
+                    <li><a href="project.html">The Project</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="container_12">
+            <div id="slogan" class="grid_12 " style="text-align:center;">
+                <img src="images/motto.jpg" width="780" height="59" alt="slogan" />
+            </div>
+            <div id="" class="grid_11" style="text-align:right;">
+                <input id="newsletter" type="text" name="newsletter" value="" />
+            </div>
+            <div id="" class="grid_1" >
+                <input type="submit"  id="newsletter_button" value="" />
+            </div>
+            <div id="staytuned" class="grid_11 prefix_8" style="text-align:left;">
+                <img src="images/staytuned.png" width="101" height="26" alt="staytuned"/>
+            </div>
+            <div id="description" class="grid_12" >
+                <p>Keebuu is a social tool to buy things and share their use with friends, family and your neighboring communities</p>
+            </div>
+            <div id="" class="grid_12" >
+                <h1>HOW KEEBUU WORKS?</h1>
+            </div>
+            <div  class="grid_1" style="text-align:right;" >
+                <img src="images/1.png" width="17" height="20" alt="1"/>
+            </div>
+            <div class="grid_2" id="box"><p>What do you buy? Write URL, pics, price and other informations</p>
+            </div>
+            <div  class="grid_1" style="text-align:right;"  >
+                <img src="images/2.png" width="17" height="20" alt="2"/>
+            </div>
+            <div class="grid_2" id="box"><p>Share within yours social networks </p></div>
+            <div  class="grid_1" style="text-align:right;"  >
+                <img src="images/3.png" width="17" height="20" alt="3"/>
+            </div>
+            <div class="grid_2" id="box"><p>Let other people jump in the deal</p></div>
+            <div  class="grid_1" style="text-align:right;"  >
+                <img src="images/4.png" width="17" height="20" alt="4"/>
+            </div>
+            <div class="grid_2 padd_box" id="box"><p>Collect money, buy and share experience you are living</p></div>
+        </div>
+        <div id="footer" class="container_12" >
+            <div class="grid_12" id="footer_line"> </div>
+            <div class="grid_12" id="footer_box">
+                <div class="grid_2 push_1" style="padding-top:0.8em;" ><a href="#"> Home</a> | <a href="#"> The project</a></div>
+                <div class="grid_9 push_8" >
+                    <div class="grid_1" style="padding-top: 8px;text-align:left;">
+                      <!--  <a href="#"><img src="images/facebook_grey.png" width="20" height="20" alt="facebook"/></a>
+                        <a href="#"><img src="images/twitter_grey.png" width="20" height="20" alt="twitter"/></a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
